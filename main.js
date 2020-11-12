@@ -30,6 +30,20 @@ var messi = svg.append("rect")
                            .attr("height", 700)
                            .style("stroke","black");
 
+var messi_png = svg.append('image')
+        .attr('xlink:href', 'IMG/messi.png')
+        .attr('width', 110)
+        .attr('height',1560)
+        .attr('x',1250)
+        .attr('y',-320);
+
+var ronaldo_png = svg.append('image')
+        .attr('xlink:href', 'IMG/cristiano-ronaldo-juventus-png.png')
+        .attr('width', 110)
+        .attr('height',1560)
+        .attr('x',515)
+        .attr('y',-340);
+
 svg.append("text")
     .attr("y", 40)
     .attr("x", 120)
@@ -125,7 +139,7 @@ svg.append("text")
                 .text("Messi")
                 .style("color","black")
                 .style("font-size","18px")
-                .style("font-weight","100");
+                .style("font-weight","100");              
 
 svg.append("circle")
         .attr("cx", 590)
@@ -134,10 +148,434 @@ svg.append("circle")
         .style("fill", "#4C4082")
         .style("stroke","black");
 
-var myimage = svg.append('image')
+svg.append("text")
+        .attr("y", 200)
+        .attr("x", 725)
+        .text("Messi")
+        .style("color","black")
+        .style("font-size","18px")
+        .style("font-weight","100");
+
+svg.append("text")
+        .attr("y", 200)
+        .attr("x", 835)
+        .text("Ronaldo")
+        .style("color","black")
+        .style("font-size","18px")
+        .style("font-weight","100");
+
+svg.append("text")
+        .attr("y", 200)
+        .attr("x", 1005)
+        .text("Messi")
+        .style("color","black")
+        .style("font-size","18px")
+        .style("font-weight","100");
+
+svg.append("text")
+        .attr("y", 200)
+        .attr("x", 1115)
+        .text("Ronaldo")
+        .style("color","black")
+        .style("font-size","18px")
+        .style("font-weight","100");
+
+//smiley for Ronaldo chart
+var cool = svg.append('image')
         .attr('xlink:href', 'IMG/cool-svgrepo-com.svg')
-        .attr('width', 200)
-        .attr('height', 200)
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x',615)
+        .attr('y',545);
+
+var cool = svg.append('image')
+        .attr('xlink:href', 'IMG/cool-svgrepo-com.svg')
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x',775)
+        .attr('y',185);
+
+var cool = svg.append('image')
+        .attr('xlink:href', 'IMG/cool-svgrepo-com.svg')
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x',1055)
+        .attr('y',185);
+
+var sad = svg.append('image')
+        .attr('xlink:href', 'IMG/sad-sleepy-emoticon-face-square-svgrepo-com.svg')
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x',615)
+        .attr('y',575);
+
+var sad = svg.append('image')
+        .attr('xlink:href', 'IMG/sad-sleepy-emoticon-face-square-svgrepo-com.svg')
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x',905)
+        .attr('y',185);
+
+var sad = svg.append('image')
+        .attr('xlink:href', 'IMG/sad-sleepy-emoticon-face-square-svgrepo-com.svg')
+        .attr('width', 20)
+        .attr('height', 20)
+        .attr('x',1185)
+        .attr('y',185);
+
+//Balon d or Title
+svg.append("text")
+        .attr("y", 170)
+        .attr("x", 755)
+        .text("Ballon d'Or")
+        .style("fill","grey")
+        .style("font-size","28px")
+        .style("font-weight","300");
+
+svg.append("text")
+        .attr("y", 170)
+        .attr("x", 1025)
+        .text("Golden Shoe")
+        .style("fill","grey")
+        .style("font-size","28px")
+        .style("font-weight","300");
+
+
+//rectangle for Balon d or
+
+var legend = svg.append("rect")
+                           .attr("x", 700)
+                           .attr("y", 180)
+                           .attr("width", 240)
+                           .attr("height", 460)
+                           .style("stroke","black")
+                           .style("fill","transparent");
+
+var legend = svg.append("rect")
+                           .attr("x", 980)
+                           .attr("y", 180)
+                           .attr("width", 240)
+                           .attr("height", 460)
+                           .style("stroke","black")
+                           .style("fill","transparent");
+
+var line1 = svg.append('line')
+                           .style("stroke", "black")
+                           .style("stroke-width", 1)
+                           .style("stroke-dasharray", ("3, 3"))
+                           .attr("x1", 820)
+                           .attr("y1", 180)
+                           .attr("x2", 820)
+                           .attr("y2", 640);
+
+var line1 = svg.append('line')
+                           .style("stroke", "black")
+                           .style("stroke-width", 1)
+                           .style("stroke-dasharray", ("3, 3"))
+                           .attr("x1", 1100)
+                           .attr("y1", 180)
+                           .attr("x2", 1100)
+                           .attr("y2", 640);
+
+var line1 = svg.append('line')
+                           .style("stroke", "black")
+                           .style("stroke-width", 1)
+                           .attr("x1", 700)
+                           .attr("y1", 210)
+                           .attr("x2", 940)
+                           .attr("y2", 210);
+
+var line1 = svg.append('line')
+                           .style("stroke", "black")
+                           .style("stroke-width", 1)
+                           .attr("x1", 980)
+                           .attr("y1", 210)
+                           .attr("x2", 1220)
+                           .attr("y2", 210);
+
+//Messi Balon'd or
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',730)
+    .attr('y',220);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 725)
+    .attr("x", -265)
+    .text("2019")
+
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',730)
+    .attr('y',290);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 725)
+    .attr("x", -335)
+    .text("2015")
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',730)
+    .attr('y',360);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 725)
+    .attr("x", -405)
+    .text("2012")
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/ballon-dor.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',730)
+        .attr('y',430);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 725)
+        .attr("x", -475)
+        .text("2011")
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/ballon-dor.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',730)
+        .attr('y',500);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 725)
+        .attr("x", -545)
+        .text("2010")
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/ballon-dor.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',730)
+        .attr('y',570);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 725)
+        .attr("x", -615)
+        .text("2009")
+
+//Ronaldo Balon'd or
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',850)
+    .attr('y',220);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 845)
+    .attr("x", -265)
+    .text("2017")
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',850)
+    .attr('y',290);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 845)
+    .attr("x", -335)
+    .text("2016")
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',850)
+    .attr('y',360);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 845)
+    .attr("x", -405)
+    .text("2014")
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',850)
+    .attr('y',430);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 845)
+    .attr("x", -475)
+    .text("2013")
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/ballon-dor.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',850)
+    .attr('y',500);   
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 845)
+    .attr("x", -545)
+    .text("2008")
+
+//Golden boot - Messi
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/golden_boot.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',1010)
+    .attr('y',220);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 1000)
+    .attr("x", -265)
+    .text("2019");
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/golden_boot.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',1010)
+    .attr('y',290);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 1000)
+    .attr("x", -335)
+    .text("2018");
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/golden_boot.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',1010)
+    .attr('y',360);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 1000)
+    .attr("x", -405)
+    .text("2017");
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/golden_boot.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',1010)
+        .attr('y',430);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 1000)
+        .attr("x", -475)
+        .text("2013");
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/golden_boot.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',1010)
+        .attr('y',500);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 1000)
+        .attr("x", -545)
+        .text("2012");
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/golden_boot.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',1010)
+        .attr('y',570);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 1000)
+        .attr("x", -615)
+        .text("2010");
+
+//Golden boot - Ronaldo
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/golden_boot.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',1130)
+    .attr('y',220);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 1120)
+    .attr("x", -265)
+    .text("2015");
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/golden_boot.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',1130)
+    .attr('y',290);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 1120)
+    .attr("x", -335)
+    .text("2014");
+
+var Balon = svg.append('image')
+    .attr('xlink:href', 'IMG/golden_boot.svg')
+    .attr('width', 60)
+    .attr('height', 60)
+    .attr('x',1130)
+    .attr('y',360);
+
+svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 1120)
+    .attr("x", -405)
+    .text("2011");
+
+var Balon = svg.append('image')
+        .attr('xlink:href', 'IMG/golden_boot.svg')
+        .attr('width', 60)
+        .attr('height', 60)
+        .attr('x',1130)
+        .attr('y',430);
+
+svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 1120)
+        .attr("x", -475)
+        .text("2008");
+
+
+        
 
 
 
