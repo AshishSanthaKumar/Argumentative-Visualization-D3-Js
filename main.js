@@ -35,14 +35,16 @@ var messi_png = svg.append('image')
         .attr('width', 110)
         .attr('height',1560)
         .attr('x',1250)
-        .attr('y',-320);
+        .attr('y',-320)
+        .style('opacity',0.5);
 
 var ronaldo_png = svg.append('image')
         .attr('xlink:href', 'IMG/cristiano-ronaldo-juventus-png.png')
         .attr('width', 110)
         .attr('height',1560)
         .attr('x',515)
-        .attr('y',-340);
+        .attr('y',-340)
+        .style('opacity',0.5);
 
 svg.append("text")
     .attr("y", 40)
