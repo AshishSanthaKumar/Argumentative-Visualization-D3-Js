@@ -11,8 +11,8 @@ var svg = d3.select(".main").append("svg")
                            .attr("transform", `translate(${margin.left},${margin.top})`);
 //tooltip
 div = d3.select("body").append("div")
-     .attr("class", "tooltip-map")
-     .style("opacity", 0);
+        .attr("class", "tooltip-map")
+        .style("opacity", 0);
 
 var ronaldo = svg.append("rect")
                            .attr("class","ronaldo")
@@ -36,7 +36,7 @@ var messi_png = svg.append('image')
         .attr('height',1560)
         .attr('x',1250)
         .attr('y',-320)
-        .style('opacity',0.5);
+        .style('opacity',0.7);
 
 var ronaldo_png = svg.append('image')
         .attr('xlink:href', 'IMG/cristiano-ronaldo-juventus-png.png')
@@ -44,7 +44,7 @@ var ronaldo_png = svg.append('image')
         .attr('height',1560)
         .attr('x',515)
         .attr('y',-340)
-        .style('opacity',0.5);
+        .style('opacity',0.7);
 
 svg.append("text")
     .attr("y", 40)
