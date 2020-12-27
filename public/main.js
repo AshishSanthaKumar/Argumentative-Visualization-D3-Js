@@ -584,7 +584,7 @@ svg.append("text")
     
 document.addEventListener('DOMContentLoaded', function() {
    
-        Promise.all([d3.csv('data/goat.csv')])
+        Promise.all([d3.csv('https://raw.githubusercontent.com/AshishSanthaKumar/Argumentative-Visualization-D3-Js/main/public/Data/goat.csv')])
                 .then(function(values){
         
         data = values[0];
