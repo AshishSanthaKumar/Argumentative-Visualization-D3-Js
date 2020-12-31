@@ -1,5 +1,7 @@
 # Argumentative Vis
 
+To view this : https://argumentative-visualization-d3.herokuapp.com/
+
 In this homework, you will create a pair of data visualizations that promote opposing viewpoints using the same base dataset.
 
 Your completed submission should have the following files:
